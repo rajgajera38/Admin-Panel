@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- --------------------------Loader-------------------------- -->
+    
+     <div class="loader_con">
+         <div class="loader"></div>
+     </div>
+
+
+     <!-- --------------------Back to Top Button-------------------- -->
+
+    <div id="backtotop"><i class="fas fa-chevron-up"></i></div>
+
+
+    <!-- -----------------------hedaer section----------------------- -->
+    <header>
+        <div class="header_left">
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+                <h1>Devine</h1>
+            </div>
+
+            <div class="nav_icon">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="search">
+                <input type="search" name="search" id="search-box" placeholder="Search Here..."><i
+                    class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <div class="header_right">
+            <div class="all_icons">
+                <div id="theme">
+                    <i class="far fa-moon"></i>
+                </div>
+
+                <div class="mail">
+                    <i class="far fa-envelope"><span></span>
+
+                        <div class="mail_box">
+                            <p>Messages</p>
+                            <hr>
+
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsCkAhzTg19GgtkVMU33h1vXrMyKf-NBnV1rZKfNF8qPDJR1YaweMkeCFlTM6_BAEd8k&usqp=CAU"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">Robert Downey JR</p>
+
+                                    <p class="p1msg">Let's meet this saturday.</p>
+
+                                    <p class="p1time">3 hours ago</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://www.mykhel.com/thumb/220x100x220/cricket/players/8/3788.1666934063.jpg"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">Virat Kohli</p>
+
+                                    <p class="p1msg">Last Sunday's match was amazing!</p>
+
+                                    <p class="p1time">3 hours ago</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://cricketrevolt.com/wp-content/uploads/2021/01/msd-800x445.jpg"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">M.S. Dhoni</p>
+
+                                    <p class="p1msg">Hey harry, do you have number of rishabh?</p>
+
+                                    <p class="p1time">5 hours ago</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://s.hdnux.com/photos/01/33/16/54/23915302/3/1200x0.jpg"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">Lionel Messi</p>
+
+                                    <p class="p1msg">What's your plane for this weekends?</p>
+
+                                    <p class="p1time">8 hours ago</p>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="btn">
+                                <a href="#">SEE MORE</a>
+                            </div>
+                        </div>
+                    </i>
+                </div>
+
+                <div class="bell">
+                    <i class="far fa-bell"><span></span>
+
+                        <div class="note_box">
+                            <p>Notifications</p>
+                            <hr>
+
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsCkAhzTg19GgtkVMU33h1vXrMyKf-NBnV1rZKfNF8qPDJR1YaweMkeCFlTM6_BAEd8k&usqp=CAU"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">Robert Downey JR</p>
+
+                                    <p class="p1msg">has added new schedule.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://www.mykhel.com/thumb/220x100x220/cricket/players/8/3788.1666934063.jpg"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">Virat Kohli</p>
+
+                                    <p class="p1msg">has send you new templete.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://cricketrevolt.com/wp-content/uploads/2021/01/msd-800x445.jpg"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">M.S. Dhoni</p>
+
+                                    <p class="p1msg">has send you new templete.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="person1">
+                                <div class="pimg">
+                                    <img src="https://s.hdnux.com/photos/01/33/16/54/23915302/3/1200x0.jpg"
+                                        alt="image not found">
+                                </div>
+
+                                <div class="details">
+                                    <p class="p1name">Lionel Messi</p>
+
+                                    <p class="p1msg">has added new schedule.</p>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="btn">
+                                <a href="#">SEE MORE</a>
+                            </div>
+                        </div>
+                    </i>
+                </div>
+
+                <div class="profile">
+                    <img src="image/profilr.jpg" alt="">
+
+                    <div class="profile_dd">
+                        <h2 class="pro_name">JHONNY DEPP</h2>
+                        <p class="profile_p1">Web Designer</p>
+                        <hr>
+
+                        <ul class="pro_ul">
+                            <li class="pro_li"><i class="far fa-user" style="margin-left: 4px;"></i>
+                                <p>My Profile</p>
+                            </li>
+                            <li class="pro_li"><i class="far fa-edit"></i>
+                                <p>Edit Profile</p>
+                            </li>
+                            <li class="pro_li"><i class="fas fa-cog"></i>
+                                <p>Account Settings</p>
+                            </li>
+                            <li class="pro_li"><i class="fas fa-cog"></i>
+                                <p>Support</p>
+                            </li>
+                            <li class="pro_li"><i class="far fa-compass"></i>
+                                <p>Activity</p>
+                            </li>
+                            <li class="pro_li"><i class="fas fa-power-off"></i>
+                                <p>Sign Out</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- -----------------------------navbar----------------------------- -->
+
+    <nav>
+        <ul class="nav_ul">
+            <p>MAIN</p>
+            <li class="nav_li active">
+                <a href="#"><i class="fas fa-home"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <p>COMPONENTS</p>
+            <li class="nav_li dd1">
+                <a href="#"><i class="fas fa-database"></i>
+                    <span>Elements</span><i class="fas fa-chevron-right dd_icon1"></i></a>
+            </li>
+
+            <!-- dropdown of components  -->
+
+            <ul class="nav_ul2">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Accordion</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Badges</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Dropdown</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Footer</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Progress</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Toast</span></a>
+                </li>
+            </ul>
+
+            <li class="nav_li dd2">
+                <a href="#"><i class="fas fa-th-large"></i>
+                    <span>Apps</span><i class="fas fa-chevron-right dd_icon2"></i></a>
+            </li>
+
+            <!-- dropdown of apps -->
+
+            <ul class="nav_ul3">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Chat</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Contact</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>File Manager</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Loader</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Rating</span></a>
+                </li>
+            </ul>
+
+            <li class="nav_li">
+                <a href="#"><i class="fab fa-hive"></i>
+                    <span>Advanced UI</span></a>
+            </li>
+
+            <li class="nav_li">
+                <a href="#"><i class="fas fa-home"></i>
+                    <span>Landing Page</span></a>
+            </li>
+
+            <p>ICONS</p>
+            <li class="nav_li dd3">
+                <a href="#"><i class="fas fa-gift"></i>
+                    <span>Icons</span><i class="fas fa-chevron-right dd_icon3"></i></a>
+            </li>
+
+            <!-- dropdown of Icons -->
+
+            <ul class="nav_ul4">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Font Awesome</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Material Design Icons</span></a>
+                </li>
+            </ul>
+
+            <p>MAPS</p>
+            <li class="nav_li dd4">
+                <a href="#"><i class="fas fa-map"></i>
+                    <span>Map</span><i class="fas fa-chevron-right dd_icon4"></i></a>
+            </li>
+
+            <!-- dropdown of Maps -->
+
+            <ul class="nav_ul5">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Leaflet Maps</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Vector Maps</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Mapel Maps</span></a>
+                </li>
+            </ul>
+
+            <p>CUSTOM & SUB MENUS</p>
+            <li class="nav_li dd5">
+                <a href="#"><i class="fas fa-th-large"></i>
+                    <span>Custom Pages</span><i class="fas fa-chevron-right dd_icon5"></i></a>
+            </li>
+
+            <!-- dropdown of Custom pages -->
+
+            <ul class="nav_ul6">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Register/Login</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Reset Password</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Lock Screen</span></a>
+                </li>
+            </ul>
+
+            <li class="nav_li dd6">
+                <a href="#"><i class="fas fa-bars"></i>
+                    <span>Sub Menus</span><i class="fas fa-chevron-right dd_icon6"></i></a>
+            </li>
+
+            <!-- dropdown of sub menu -->
+
+            <ul class="nav_ul7">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Submenu 1</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Submenu 2</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Submenu 3</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Submenu 4</span></a>
+                </li>
+            </ul>
+
+            <p>PAGES & ERROR PAGES</p>
+            <li class="nav_li dd7">
+                <a href="#"><i class="fas fa-layer-group"></i>
+                    <span>Pages</span><i class="fas fa-chevron-right dd_icon7"></i></a>
+            </li>
+
+            <!-- dropdown of pages -->
+
+            <ul class="nav_ul8">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Profile</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Pricing</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Blog</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>E-commerce</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>Switcher</span></a>
+                </li>
+            </ul>
+
+            <li class="nav_li dd8">
+                <a href="#"><i class="fas fa-exclamation-circle"></i>
+                    <span>Error Pages</span><i class="fas fa-chevron-right dd_icon8"></i></a>
+            </li>
+
+            <!-- dropdown of error pages -->
+
+            <ul class="nav_ul9">
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>400</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>401</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>402</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>403</span></a>
+                </li>
+
+                <li class="nav_li2">
+                    <a href="#"><i class="fas fa-caret-right"></i>
+                        <span>404</span></a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+
+
+    <!-- ---------------------------banner part--------------------------- -->
+
+    <div class="main_container">
+        <div class="child_con">
+
+            <div class="title_row">
+                <h1 class="title">Dashboard</h1>
+
+                <div class="title_btns">
+                    <div class="btn1">
+                        <a href="#"><i class="fas fa-download"></i>&nbsp;&nbsp; Import</a>
+                    </div>
+
+                    <div class="btn2">
+                        <a href="#"><i class="fas fa-upload"></i>&nbsp;&nbsp; Export</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ----------------- 4-cards row starts here  ----------------->
+            <div class="row">
+                <div class="col-md-4 col-xl-3 box">
+                    <div class="card bg-c-blue order-card">
+                        <div class="card-block">
+                            <h6 class="m-b-20">Total Sales</h6>
+                            <div class="midline">
+                                <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span
+                                        class="num">3257</span></h2>
+                            </div>
+                            <p class="m-b-0">Completed Orders<span class="f-right">3257</span></p>
+                            <p class="ps">76% Growth This Month</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xl-3 box">
+                    <div class="card bg-c-green order-card">
+                        <div class="card-block">
+                            <h6 class="m-b-20">Total States</h6>
+                            <div class="midline">
+                                <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span class="num">1678</span>
+                                </h2>
+                            </div>
+                            <p class="m-b-0">Previous States<span class="f-right">1689</span></p>
+                            <p class="ps">5% Loss This Month</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xl-3 box">
+                    <div class="card bg-c-yellow order-card">
+                        <div class="card-block">
+                            <h6 class="m-b-20">Total Income</h6>
+                            <div class="midline">
+                                <h2 class="text-right"><i class="fas fa-money-check-alt f-left"></i><span
+                                        class="num">$2590</span></h2>
+                            </div>
+                            <p class="m-b-0">Last Month Income<span class="f-right">1632</span></p>
+                            <p class="ps">63% From Last Month</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xl-3 box">
+                    <div class="card bg-c-pink order-card">
+                        <div class="card-block">
+                            <h6 class="m-b-20">Total Tax</h6>
+                            <div class="midline">
+                                <h2 class="text-right"><i class="fa fa-credit-card f-left"></i><span
+                                        class="num">777</span></h2>
+                            </div>
+                            <p class="m-b-0">30% SGST<span class="f-right">$391</span></p>
+                            <p class="ps">53% of Last Month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- -------------------------chart------------------------- -->
+
+            <div class="graphBox">
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="earning"></canvas>
+                </div>
+            </div>
+
+            <!-- ----------------data-table section------------------>
+
+            <div class="main-body">
+                <div class="promo_card">
+                    <h1 class="dt_h1">Welcome to EasyPay</h1>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <button>Learn More</button>
+                </div>
+
+                <div class="history_lists">
+                    <div class="list1">
+                        <div class="row2">
+                            <h4>History</h4>
+                            <a href="#">See all</a>
+                        </div>
+                        <table class="table1">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Dates</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Ammount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2, Aug, 2022</td>
+                                    <td>Sam Tonny</td>
+                                    <td>Premimum</td>
+                                    <td>$2000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>29, July, 2022</td>
+
+                                    <td>Code Info</td>
+                                    <td>Silver</td>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>15, July, 2022</td>
+
+                                    <td>Jhon David</td>
+                                    <td>Startup</td>
+                                    <td>$3000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>5, July, 2022</td>
+                                    <td>Salina Gomiz</td>
+                                    <td>Premimum</td>
+                                    <td>$7000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>29, June, 2022</td>
+                                    <td>Gomiz</td>
+                                    <td>Gold</td>
+                                    <td>$4000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>28, June, 2022</td>
+                                    <td>Elyana Jhon</td>
+                                    <td>Premimum</td>
+                                    <td>$2000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="list2">
+                        <div class="row2">
+                            <h4>Documnets</h4>
+                            <a href="#">Import</a>
+                        </div>
+                        <table class="table1">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th>Imported</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>CNIC</td>
+                                    <td>PDF</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Passport</td>
+                                    <td>PDF</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Licence</td>
+                                    <td>PDF</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Pic</td>
+                                    <td>Jpg</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>CNIC</td>
+                                    <td>Jpg</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Docx</td>
+                                    <td>Word</td>
+                                    <td>22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="list2">
+                        <div class="row2">
+                            <h4>Documnets</h4>
+                            <a href="#">Upload</a>
+                        </div>
+                        <table class="table1">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th>Uplaoded</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>CNIC</td>
+                                    <td>PDF</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Passport</td>
+                                    <td>PDF</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Licence</td>
+                                    <td>PDF</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Pic</td>
+                                    <td>Jpg</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>CNIC</td>
+                                    <td>Jpg</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Docx</td>
+                                    <td>Word</td>
+                                    <td>22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="records table-responsive">
+
+                <div class="record-header">
+                    <div class="add">
+                        <span>Entries</span>
+                        <select name="" id="">
+                            <option value="">ID</option>
+                        </select>
+                        <button class="btn3">Add record</button>
+                    </div>
+
+                    <div class="browse">
+                        <input type="search" placeholder="Search" class="record-search">
+                        <select name="" id="">
+                            <option value="">Status</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <table width="100%" class="table2">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th><span class="las la-sort"></span> CLIENT</th>
+                                <th><span class="las la-sort"></span> TOTAL</th>
+                                <th><span class="las la-sort"></span> ISSUED DATE</th>
+                                <th><span class="las la-sort"></span> BALANCE</th>
+                                <th><span class="las la-sort"></span> ACTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#5033</td>
+                                <td>
+                                    <div class="client">
+                                        <div class="client-info">
+                                            <h4>Andrew Bruno</h4>
+                                            <small>bruno@crossover.org</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    $3171
+                                </td>
+                                <td>
+                                    19 April, 2022
+                                </td>
+                                <td>
+                                    -$205
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <span class="lab la-telegram-plane"></span>
+                                        <span class="las la-eye"></span>
+                                        <span class="las la-ellipsis-v"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#5033</td>
+                                <td>
+                                    <div class="client">
+                                        <div class="client-info">
+                                            <h4>Exty Bruno</h4>
+                                            <small>exty@crossover.org</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    $2171
+                                </td>
+                                <td>
+                                    19 April, 2022
+                                </td>
+                                <td>
+                                    <span class="paid">Paid</span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <span class="lab la-telegram-plane"></span>
+                                        <span class="las la-eye"></span>
+                                        <span class="las la-ellipsis-v"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#5033</td>
+                                <td>
+                                    <div class="client">
+                                        <div class="client-info">
+                                            <h4>Andrew Bruno</h4>
+                                            <small>bruno@crossover.org</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    $3171
+                                </td>
+                                <td>
+                                    19 April, 2022
+                                </td>
+                                <td>
+                                    -$205
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <span class="lab la-telegram-plane"></span>
+                                        <span class="las la-eye"></span>
+                                        <span class="las la-ellipsis-v"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#5033</td>
+                                <td>
+                                    <div class="client">
+                                        <div class="client-info">
+                                            <h4>Exty Bruno</h4>
+                                            <small>exty@crossover.org</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    $3171
+                                </td>
+                                <td>
+                                    19 April, 2022
+                                </td>
+                                <td>
+                                    <span class="paid">Paid</span>
+                                </td>
+                                <td>
+                                    <div class="actions">
+                                        <span class="lab la-telegram-plane"></span>
+                                        <span class="las la-eye"></span>
+                                        <span class="las la-ellipsis-v"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#5033</td>
+                                <td>
+                                    <div class="client">
+                                        <div class="client-info">
+                                            <h4>Andrew Bruno</h4>
+                                            <small>bruno@crossover.org</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$3171</td>
+                                <td>19 April, 2022</td>
+                                <td>-$205</td>
+                                <td>
+                                    <div class="actions">
+                                        <span class="lab la-telegram-plane"></span>
+                                        <span class="las la-eye"></span>
+                                        <span class="las la-ellipsis-v"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <!-- --------------------------footer-------------------------- -->
+
+            <div class="footer">
+                <p>Copyright &copy;2023 Devine. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- chart js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+
+    <script>
+        // loader
+
+        $(window).on("load", function () {
+            $(".loader_con").delay(800).fadeOut(1000)
+        })
+
+
+        // Back to Top Button 
+
+        $('#backtotop').click(function () {
+            $("html, body").animate({ scrollTop: "0" }, 0);
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $("#backtotop").fadeIn();
+            } else {
+                $("#backtotop").fadeOut();
+            }
+        })
+
+
+        // dark/light mode 
+
+        $("#theme").click(function () {
+            $("html").toggleClass("dark_theme");
+        });
+
+        $("#theme").click(function () {
+            $(this).find("i").toggleClass("fas fa-sun fas fa-moon");
+        });
+
+
+        // navbar icon 
+
+        $(".nav_icon").click(function () {
+            $(this).find("i").toggleClass("fas fa-bars fas fa-times");
+        });
+
+
+        // navbar slide 
+
+        $(".nav_icon").click(function () {
+            $("nav").toggleClass("nav_add");
+        });
+
+        $(".nav_icon").click(function () {
+            $(".child_con").toggleClass("child_con_jq");
+        });
+
+
+        // mail-box jquery 
+
+        $(".mail").click(function(){
+            $(".mail_box").toggle();
+        });
+
+
+        // notification jquery
+
+        $(".bell").click(function(){
+            $(".note_box").toggle();
+        });
+
+
+        // Profile jquery
+
+        $(".profile").click(function(){
+            $(".profile_dd").toggle();
+        });
+
+
+        // drop-down in navbar
+
+        $(".dd1").click(function () {
+            $(".nav_ul2").toggleClass("drop_down");
+        });
+
+        $(".dd2").click(function () {
+            $(".nav_ul3").toggleClass("drop_down");
+        });
+
+        $(".dd3").click(function () {
+            $(".nav_ul4").toggleClass("drop_down");
+        });
+
+        $(".dd4").click(function () {
+            $(".nav_ul5").toggleClass("drop_down");
+        });
+
+        $(".dd5").click(function () {
+            $(".nav_ul6").toggleClass("drop_down");
+        });
+
+        $(".dd6").click(function () {
+            $(".nav_ul7").toggleClass("drop_down");
+        });
+
+        $(".dd7").click(function () {
+            $(".nav_ul8").toggleClass("drop_down");
+        });
+
+        $(".dd8").click(function () {
+            $(".nav_ul9").toggleClass("drop_down");
+        });
+
+
+        // drop down icon 
+
+        $(".dd1").click(function () {
+            $(".dd_icon1").toggleClass("dd_icon_down");
+        });
+
+        $(".dd2").click(function () {
+            $(".dd_icon2").toggleClass("dd_icon_down");
+        });
+
+        $(".dd3").click(function () {
+            $(".dd_icon3").toggleClass("dd_icon_down");
+        });
+
+        $(".dd4").click(function () {
+            $(".dd_icon4").toggleClass("dd_icon_down");
+        });
+
+        $(".dd5").click(function () {
+            $(".dd_icon5").toggleClass("dd_icon_down");
+        });
+
+        $(".dd6").click(function () {
+            $(".dd_icon6").toggleClass("dd_icon_down");
+        });
+
+        $(".dd7").click(function () {
+            $(".dd_icon7").toggleClass("dd_icon_down");
+        });
+
+        $(".dd8").click(function () {
+            $(".dd_icon8").toggleClass("dd_icon_down");
+        });
+
+        $(".btn2 a").click(function () {
+            $(".btn2_dd").toggleClass("show");
+        });
+    </script>
+
+</body>
+
+</html>
